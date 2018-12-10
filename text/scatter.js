@@ -25,7 +25,7 @@ var xCat = "Date",
 
 var parseDate = d3.time.format("%Y-%m-%d");
 
-d3.csv("ELA_Dataset_1.csv", function(data) {
+d3.csv("assets/ELA_Dataset.csv", function(data) {
   data.forEach(function(d) {
     d.Date = parseDate.parse(d.Date);
     d.Length = +d.Length;
