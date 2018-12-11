@@ -62,7 +62,7 @@ d3.csv("assets/ELA_Dataset.csv", function(data) {
       .attr("class", "d3-tip")
       .offset([-10, 0])
       .html(function(d) {
-        return dCat + ": " + d[dCat] + "<br>" + yCat + ": " + d[yCat] + 
+        return dCat + ": " + d[dCat].toDateString() + "<br>" + yCat + ": " + d[yCat] + 
         "<br>" + mCat + ": " + d[mCat] + "<br>" + fCat + ": " + d[fCat] +"<br>" + eCat + ": " + d[eCat] ;
       });
 
